@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/com/zmc/zmcrobot/CurveView.java=UTF-8
+encoding//src/com/zmc/zmcrobot/IndicatorBarView.java=UTF-8
+encoding//src/com/zmc/zmcrobot/MainActivity.java=UTF-8
+encoding//src/com/zmc/zmcrobot/RobotView.java=UTF-8
+encoding//src/com/zmc/zmcrobot/simulator/SlidingMode.java=UTF-8
+encoding//src/com/zmc/zmcrobot/ui/AbstractRobot.java=UTF-8
+encoding//src/com/zmc/zmcrobot/ui/Obstacle.java=UTF-8
+encoding//src/com/zmc/zmcrobot/ui/Robot.java=UTF-8
+encoding//src/com/zmc/zmcrobot/ui/RobotSimulateView.java=UTF-8
+encoding//src/com/zmc/zmcrobot/ui/TTRobot.java=UTF-8

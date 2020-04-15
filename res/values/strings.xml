@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ZMC ROBOT</string>
+    <string name="title_drive">Driver</string>
+    <string name="title_gotogoal">GotoGoal</string>
+    <string name="title_gravity">Gravity Ctrl</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_simulator">Simulator</string>
+    <string name="title_driver">driver</string>
+    <string name="title_Gear_Drive">Gear</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_balance_turning">Balance Turning</string>
+    <string name="title_step_response">StepResponse</string>
+    <string name="title_Slam">Driver</string>
+    
+    <string name="action_device">Device &#8230;</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="action_cmd">Command vie BLE</string>
+    
+    <string name="action_start_map">Start slam map</string>
+    <string name="action_stop_map">Stop slam map</string>
+   
+    <string name="action_save_map">Save slam map</string>
+    <string name="action_load_map">Load slam map</string>
+    
+    <string name="lookingup">Looking up ZMC Robot</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="send">Send</string>
+    <string name="title_paired_devices">Paired devices</string>
+    <string name="title_other_devices">Other devices</string>
+    <string name="button_scan">Scan devices</string>
+    <string name="none_paired">There are no paired devices!</string>
+    <string name="scanning">Scanning devices</string>
+    <string name="select_device">Select device</string>
+    <string name="none_found">No devices founded</string>
+    <string name="not_connected">Not connected</string>
+    <string name="bt_not_enabled_leaving">bt_not_enabled_leaving</string>
+    <string name="title_connected_to">Connect to:</string>
+    <string name="title_connecting">Connecting&#8230;</string>
+    <string name="title_not_connected">not connected</string>
+    <string name="mph">mph</string>
+    <string name="rpm">rpm</string>
+    <string name="title_stop">Stop</string>
+    <string name="title_forward">Forward:</string>
+    <string name="title_reversing">Reversing:</string>
+    <string name="title_turn_left">Turn Left:</string>
+    <string name="title_turn_right">Turn Right:</string>
+    <string name="Brake">Brake</string>
+    <string name="Speeder">Speeder</string>
+    <string name="Speeder_r">Speeder r</string>
+    <string name="power_tip">Power</string>
+    <string name="app_tip">ZMC ROBOT</string>
+    <string name="device_tip">zmc robot</string>
+    <string name="go">Go</string>
+    <string name="stop">Stop</string>
+    <string name="PIDParamaters">PID Parameters</string>
+    <string name="kpLabel">KP:</string>
+    <string name="KILabel">KI:</string>
+    <string name="KDLabel">KD:</string>
+    
+    <string name="RLabel">Wheel Radius(R):</string>
+    <string name="LLabel">Wheel Distance(L):</string>
+    
+    <string name="IrFilterLabel">Start IR filter</string>
+    <string name="alphaLabel">Alpha:</string>
+    
+    <string name="OKLabel">OK</string>
+    <string name="HomeLabel">home</string>
+    <string name="obstacleLabel">Obstacle parameters</string>
+    <string name="AtObstacleLabel">At Obstacle:</string>
+    <string name="unsageLabel">Unsafe Obstacle:</string>
+    <string name="gravityModeLabel">gravity</string>
+    <string name="simulageModeLabel">仿真模式</string>
+    <string name="ignoreObstacleLabel">忽略障碍</string>
+    <string name="dualCtrlLabel">双手控制</string>
+    <string name="gearCtrlLabel">Gear/Joy</string>
+    <string name="UseIMULabel">Use IMU</string>
+    
+    <string name="RealModeLabel">真机模式</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="robotSettingsLabel">Robot Settings</string>
+    <string name="velocityLabel">Velocity:</string>
+    <string name="maxRPMLabel">Max RPM:</string>
+    <string name="minRPMLabel">Min RPM:</string>
+    <string name="followWallDistanceLabel">Follow wall Distance:</string>
+    <string name="dfwLabel">FW Distance:</string>
+    <string name="balancePIDLabel">PID for balance</string>
+  
+    <string name="dirPIDLabel">PID for Direction</string>
+    <string name="goalPIDLabel">PID for Goal</string>
+    <string name="thetaPIDLabel">PID for turning theta</string>
+    
+    <string name="diffPIDLabel">PID for differencial Ctrl</string>
+    
+    <string name="PIDforSpeedLabel">PID for Speed</string>
+    <string name="setLabel">upload</string>
+    <string name="defaultLabel">reset</string>
+    <string name="startLabel">Start</string>
+    <string name="cuveLabel">Balance curve:</string>
+    <string name="motorSettingsLabel">Motor params:</string>
+    <string name="minPwmLabel">Min PWM:</string>
+    <string name="maxPwmLabel">Max PWM:</string>
+    <string name="pwmDiffLabel">PWM Diff:</string>
+    <string name="LoadSettingsLabel">Load Settings</string>
+    <string name="angleOffsetLabel">Angle Off:</string>
+    <string name="maxPWMLabel">Max PWM:</string>
+    <string name="whellSyncKPLabel">wheel sync KP:</string>
+    <string name="PWMZeroLabel">PWM Zero:</string>
+    <string name="checkBattleLabel">check battle voltage</string>
+    <string name="AHRSAngleLabel">MadgwickAHRS</string>
+    <string name="KalmanAngleLabel">Kalman</string>
+    <string name="SensorAngleLabel">Sensor</string>
+    <string name="CommAngleLabel">互补融合</string>
+	<string name="gyroLabel">GYRO</string>
+	<string name="PWMBLabel">PWM-B</string>
+		<string name="PWMSLabel">PWM-S</string>
+		
+    
+    <string name="speedLabel">速度环</string>
+    <string name="thetaLabel">角度环</string>
+    
+    
+    <string name="pwmLabel">PWM:</string>
+    <string name="stepResponseLabel">Step response test </string>
+    
+    <string name="GotoGoalLabel">Go To Goal</string>
+    <string name="AvoidObstacleLabel">Avoid Obstacle</string>
+    <string name="TraceRouteLabel">Trace Route</string>
+    <string name="goalAngle">Q(deg):</string>
+    <string name="velocity">GTG V:</string>
+    <string name="PIDForBalanceLabel">"Balance PID params: "</string>
+    <string name="SpeedPIDLabel">Speed PID params:</string>
+    <string name="TurnPIDLabel">Turning PID params:</string>
+    <string name="turningPIDLabel">PID for turning</string>
+    <string name="batteryLabel">0.0</string>
+    <string name="maxwLabel">max_w:</string>
+    <string name="bleCmdLabel">BLE Command</string>
+    <string name="bleCmdHintsStr">BLE Cmd:</string>
+    
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.zmc.zmcrobot.ui.RobotSimulateView
+        android:id="@+id/robot_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+    
+		<RadioGroup
+		    android:id="@+id/ModeChoice"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+               
+        <RadioButton
+            android:id="@+id/GotoGoalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/GotoGoalLabel" 
+            android:checked="TRUE"
+            />
+
+        <RadioButton
+            android:id="@+id/AvoidObstacleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AvoidObstacleLabel" />
+		
+        <RadioButton
+            android:id="@+id/TraceRouteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TraceRouteLabel" />
+
+        </RadioGroup>
+        
+	   	   		<CheckBox
+    		    android:id="@+id/IgnoreObstacleCheckBox"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="2"
+    		    android:text="@string/ignoreObstacleLabel" />
+			
+   	</LinearLayout>
+				
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal" >
+
+                  <TextView
+                      android:id="@+id/stextView13"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="10dp"
+                      android:gravity="right"
+                      android:text="@string/velocity"
+                      android:textSize="15sp" />
+
+                  <EditText
+                      android:id="@+id/velocityEditText"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:includeFontPadding="true"
+                      android:inputType="number|numberDecimal"
+                      android:lines="1"
+                      android:maxEms="5"
+                      android:scrollHorizontally="false"
+                      android:text="0.5" >
+
+                  </EditText>
+            		
+                  <TextView
+                      android:id="@+id/stextView12"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="10dp"
+                      android:gravity="right"
+                      android:text="@string/goalAngle"
+                      android:textSize="15sp" />
+
+                  <EditText
+                      android:id="@+id/goalAngleEditText"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:includeFontPadding="true"
+                      android:inputType="number"
+                      android:lines="1"
+                      android:maxEms="5"
+                      android:scrollHorizontally="false"
+                      android:text="45" >
+
+                  </EditText>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:minWidth="100dp"
+            android:text="@string/HomeLabel" />
+
+        <Button
+            android:id="@+id/buttonAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="2"
+            android:text="@string/go" />
+
+        
+        <ToggleButton
+            android:id="@+id/toggleButtonSimulate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:text="ToggleButton"
+            android:textOff="@string/RealModeLabel"
+            android:textOn="@string/simulageModeLabel" />
+
+    </LinearLayout>
+
+</LinearLayout>

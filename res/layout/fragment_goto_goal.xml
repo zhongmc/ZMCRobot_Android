@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.zmc.zmcrobot.RobotView
+        android:id="@+id/robot_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="2"
+            
+            android:text="@string/HomeLabel" />
+
+        <Button
+            android:id="@+id/buttonAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="2"
+            android:text="@string/go" />
+
+   		<CheckBox
+    		    android:id="@+id/SimulateCheckBox"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="2"
+    		    android:text="@string/simulageModeLabel" />
+        
+   	   		<CheckBox
+    		    android:id="@+id/IgnoreObstacleCheckBox"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="2"
+    		    android:text="@string/ignoreObstacleLabel" />
+   			
+        
+        <!--  ToggleButton
+            android:id="@+id/toggleButtonSimulate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:text="ToggleButton"
+            android:textOff="@string/RealModeLabel"
+            android:textOn="@string/simulageModeLabel" / -->
+
+    </LinearLayout>
+
+</LinearLayout>

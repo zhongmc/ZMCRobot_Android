@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:scrollbars="vertical" >
+
+        <Button
+            android:id="@+id/LoadSettingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/LoadSettingsLabel" />
+        
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="8" >
+        
+        <TextView
+            android:id="@+id/textViewVW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnSpan="7"
+            android:layout_gravity="left"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/dirPIDLabel" />
+            
+        
+            <TextView
+                android:id="@+id/textViewP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_column="0"
+                android:layout_gravity="right"
+                android:layout_row="1"
+                android:gravity="right"
+                android:text="@string/kpLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextBKP"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="1"
+                      android:layout_row="1"
+                      android:minEms="3" />
+            
+            <TextView
+                android:id="@+id/btextViewI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="right"
+                 android:layout_row="1"
+                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="right"
+                android:text="@string/KILabel" />
+
+                  <EditText
+                      android:id="@+id/editTextBKI"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="3"
+                      android:layout_row="1"
+                      android:minEms="3" >
+</EditText>
+            
+            
+            <TextView
+                android:id="@+id/textViewD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_gravity="right"
+                 android:layout_row="1"
+                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="right"
+                android:text="@string/KDLabel" />
+            
+            <EditText
+                android:id="@+id/editTextBKD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:layout_row="1"
+                android:minEms="3" />
+
+            <Button
+                android:id="@+id/uploadPBButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_row="1"
+                android:minWidth="64dp"
+                android:text="@string/setLabel"
+                android:width="100dp" />
+            
+           <Button
+               android:id="@+id/resetPBButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="7"
+               android:layout_marginLeft="@dimen/activity_horizontal_margin"
+               android:layout_row="1"
+               android:minWidth="64dp"
+               android:text="@string/defaultLabel"
+               android:width="100dp" />
+            
+             
+        </GridLayout>
+
+        
+        
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="8" >
+        
+        <TextView
+            android:id="@+id/textViewGPID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnSpan="7"
+            android:layout_gravity="left"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/goalPIDLabel" />
+            
+        
+            <TextView
+                android:id="@+id/textViewPP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_column="0"
+                android:layout_gravity="right"
+                android:layout_row="1"
+                android:gravity="right"
+                android:text="@string/kpLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextPKP"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="1"
+                      android:layout_row="1"
+                      android:minEms="3" />
+            
+            <TextView
+                android:id="@+id/btextViewPI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="right"
+                 android:layout_row="1"
+                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="right"
+                android:text="@string/KILabel" />
+
+                  <EditText
+                      android:id="@+id/editTextPKI"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="3"
+                      android:layout_row="1"
+                      android:minEms="3" />
+            
+            <TextView
+                android:id="@+id/textViewPD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_gravity="right"
+                 android:layout_row="1"
+                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="right"
+                android:text="@string/KDLabel" />
+            
+            <EditText
+                android:id="@+id/editTextPKD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:layout_row="1"
+                android:minEms="3" />
+            
+            <Button
+                android:id="@+id/uploadPSButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_row="1"
+                android:minWidth="64dp"
+                android:text="@string/setLabel"
+                android:width="100dp" />
+            
+           <Button
+               android:id="@+id/resetPSButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="7"
+               android:layout_marginLeft="@dimen/activity_horizontal_margin"
+               android:layout_row="1"
+               android:minWidth="64dp"
+               android:text="@string/defaultLabel"
+               android:width="100dp" />
+            
+             
+        </GridLayout>
+        
+        
+        
+       <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="8" >
+        
+        <TextView
+            android:id="@+id/textViewTPID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnSpan="7"
+            android:layout_gravity="left"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/thetaPIDLabel" />
+            
+        
+            <TextView
+                android:id="@+id/textViewTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_column="0"
+                android:layout_gravity="right"
+                android:layout_row="1"
+                android:gravity="right"
+                android:text="@string/kpLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextTKP"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="1"
+                      android:layout_row="1"
+                      android:minEms="3" />
+            
+            <TextView
+                android:id="@+id/btextViewTI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="right"
+                 android:layout_row="1"
+                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="right"
+                android:text="@string/KILabel" />
+
+                  <EditText
+                      android:id="@+id/editTextTKI"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="3"
+                      android:layout_row="1"
+                      android:minEms="3" />
+            
+            <TextView
+                android:id="@+id/textViewTD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_gravity="right"
+                 android:layout_row="1"
+                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="right"
+                android:text="@string/KDLabel" />
+            
+            <EditText
+                android:id="@+id/editTextTKD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:layout_row="1"
+                android:minEms="3" />
+
+            <Button
+                android:id="@+id/uploadPTButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_row="1"
+                android:minWidth="64dp"
+                android:text="@string/setLabel"
+                android:width="100dp" />
+            
+           
+           <Button
+               android:id="@+id/resetPTButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="7"
+               android:layout_marginLeft="@dimen/activity_horizontal_margin"
+               android:layout_row="1"
+               android:minWidth="64dp"
+               android:text="@string/defaultLabel"
+               android:width="100dp" />
+            
+             
+        </GridLayout>
+        
+       <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="8" >
+        
+        <TextView
+            android:id="@+id/textViewDPID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnSpan="7"
+            android:layout_gravity="left"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/diffPIDLabel" />
+            
+        
+            <TextView
+                android:id="@+id/textViewDP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_column="0"
+                android:layout_gravity="right"
+                android:layout_row="1"
+                android:gravity="right"
+                android:text="@string/kpLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextDKP"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="1"
+                      android:layout_row="1"
+                      android:minEms="3" />
+            
+            <TextView
+                android:id="@+id/btextViewDI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="right"
+                 android:layout_row="1"
+                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="right"
+                android:text="@string/KILabel" />
+
+                  <EditText
+                      android:id="@+id/editTextDKI"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="3"
+                      android:layout_row="1"
+                      android:minEms="3" />
+            
+            <TextView
+                android:id="@+id/textViewDD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_gravity="right"
+                 android:layout_row="1"
+                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="right"
+                android:text="@string/KDLabel" />
+            
+            <EditText
+                android:id="@+id/editTextDKD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:layout_row="1"
+                android:minEms="3" />
+            
+            <Button
+                android:id="@+id/uploadPDButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_row="1"
+                android:minWidth="64dp"
+                android:text="@string/setLabel"
+                android:width="100dp" />
+            
+            
+           <Button
+               android:id="@+id/resetPDButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="7"
+               android:layout_marginLeft="@dimen/activity_horizontal_margin"
+               android:layout_row="1"
+               android:minWidth="64dp"
+               android:text="@string/defaultLabel"
+               android:width="100dp" />
+            
+             
+        </GridLayout>
+        
+            
+       
+
+        <GridLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3" >
+           
+        		<CheckBox
+    		    android:id="@+id/IMUCheckBox"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+                       android:layout_column="0"
+                       android:layout_row="0"
+    		    android:text="@string/UseIMULabel" />
+            
+                   <TextView
+                       android:id="@+id/textViewAlpha"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="1"
+                       android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                       android:layout_row="0"
+                       android:gravity="right"
+                       android:text="@string/alphaLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextAlpha"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="2"
+                      android:layout_row="0"
+                      android:minEms="2"
+                      android:text="0.8" >
+                     
+                  </EditText>
+
+                  
+        		<CheckBox
+    		    android:id="@+id/IRfilterCheckBox"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+                       android:layout_column="0"
+                       android:layout_row="1"
+    		    android:text="@string/IrFilterLabel" />
+            
+                   <TextView
+                       android:id="@+id/textViewLowPassFilter"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="1"
+                       android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                       android:layout_row="1"
+                       android:gravity="right"
+                       android:text="@string/alphaLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextFilterAlpha"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="2"
+                      android:layout_row="1"
+                      android:minEms="2"
+                      android:text="0.8" >
+                     
+                  </EditText>
+                  		
+       </GridLayout>   
+          
+        <GridLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4" >
+            
+       <TextView
+           android:id="@+id/textView551"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_column="0"
+           android:layout_columnSpan="4"
+           android:layout_gravity="left"
+           android:layout_marginLeft="@dimen/activity_horizontal_margin"
+           android:layout_marginTop="@dimen/activity_vertical_margin"
+           android:layout_row="0"
+           android:text="@string/robotSettingsLabel"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+                   <TextView
+                       android:id="@+id/textView6"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="0"
+                       android:layout_gravity="right"
+                       android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                       android:layout_row="1"
+                       android:gravity="right"
+                       android:text="@string/maxwLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextMaxW"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="1"
+                      android:layout_row="1"
+                      android:minEms="4"
+                      android:text="0.8" >
+                     
+                  </EditText>
+
+                  <TextView
+                      android:id="@+id/textView7"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="2"
+                      android:layout_gravity="right"
+                      android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                      android:layout_marginRight="@dimen/activity_horizontal_margin"
+                      android:layout_row="1"
+                      android:gravity="right"
+                      android:text="@string/maxRPMLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextMaxRPM"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="3"
+                      android:layout_row="1"
+                      android:minEms="4"
+                      android:text="240" />
+
+                  <TextView
+                      android:id="@+id/textView8"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="0"
+                      android:layout_gravity="right"
+                      android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                      android:layout_marginRight="@dimen/activity_horizontal_margin"
+                      android:layout_row="2"
+                      android:gravity="right"
+                      android:text="@string/minRPMLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextMinRPM"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="1"
+                      android:layout_row="2"
+                      android:minEms="4"
+                      android:text="150" />
+ 
+                  <TextView
+                      android:id="@+id/textView9"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                      android:layout_marginRight="@dimen/activity_horizontal_margin"
+                     android:gravity="right"
+			           android:layout_column="2"
+			           android:layout_row="2"
+                      android:text="@string/RLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextR"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="3"
+                      android:layout_row="2"
+                      android:minEms="6"
+                      android:text="0.03181" />
+
+                   <TextView
+                       android:id="@+id/textView10"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="0"
+                       android:layout_gravity="right"
+                       android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                       android:layout_marginRight="@dimen/activity_horizontal_margin"
+                       android:layout_row="3"
+                       android:gravity="right"
+                       android:text="@string/LLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextL"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="1"
+                      android:layout_row="3"
+                      android:minEms="6"
+                      android:text="0.165" />
+            
+        </GridLayout>
+         
+  
+        
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4" >
+        
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="4"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            
+            android:layout_row="0"
+            android:text="@string/obstacleLabel" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_row="1"
+                    android:gravity="right"
+                    android:text="@string/AtObstacleLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextObstacle"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="1"
+                      android:layout_row="1"
+                      android:minEms="3"
+                      android:text="0.3" />
+
+                   <TextView
+                       android:id="@+id/textView13"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="2"
+                       android:layout_gravity="right"
+                       android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                       android:layout_marginRight="@dimen/activity_horizontal_margin"
+                       android:layout_row="1"
+                       android:gravity="right"
+                       android:text="@string/unsageLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextUnsafe"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="3"
+                      android:layout_row="1"
+                      android:minEms="3"
+                      android:text="0.2" />
+
+                  <TextView
+                      android:id="@+id/textView14"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="0"
+                      android:layout_gravity="right"
+                      android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                      android:layout_marginRight="@dimen/activity_horizontal_margin"
+                      android:layout_row="2"
+                      android:gravity="right"
+                      android:text="@string/dfwLabel" />
+
+                  <EditText
+                      android:id="@+id/editTextDFW"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="1"
+                      android:layout_row="2"
+                      android:minEms="3"
+                      android:text="0.3" />
+            
+    </GridLayout>
+    
+ 
+        
+       
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/uploadPMButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setLabel" />
+
+            <Button
+                android:id="@+id/resetPMButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/defaultLabel" />
+        </LinearLayout>
+
+       
+
+</LinearLayout>
+
+</ScrollView>

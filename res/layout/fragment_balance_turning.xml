@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+              <TextView
+                  android:id="@+id/textViewVW"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="20dp"
+                  android:text="@string/balancePIDLabel" />
+
+              <GridLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:columnCount="4" >
+
+                  <TextView
+                      android:id="@+id/textView8"
+                      android:layout_column="0"
+                      android:layout_columnSpan="2"
+                      android:layout_gravity="left"
+                      android:layout_row="0"
+                      android:text="@string/PIDForBalanceLabel"
+                      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <TextView
+                      android:id="@+id/textView9"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="2"
+                      android:layout_columnSpan="2"
+                      android:layout_gravity="left"
+                      android:layout_row="0"
+                      android:text="@string/SpeedPIDLabel"
+                      android:textAppearance="?android:attr/textAppearanceMedium" />
+                  
+                  <TextView
+                      android:id="@+id/textView2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="right"
+                      android:layout_column="0"
+                      android:layout_gravity="left"
+                      android:layout_row="2"
+                      android:text="@string/kpLabel" />
+                  
+                  <EditText
+                      android:id="@+id/BKPEditText"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      
+                      android:layout_column="1"
+                      android:layout_gravity="left"
+                      android:layout_row="2"
+                      android:ems="10" >
+                  </EditText>
+
+                  <TextView
+                      android:id="@+id/textView22"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="right"
+                      android:layout_column="2"
+                      android:layout_gravity="left"
+                      android:layout_row="2"
+                      android:text="@string/kpLabel" />
+                  
+                  <EditText
+                      android:id="@+id/SKPEditText"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      
+                      android:layout_column="3"
+                      android:layout_gravity="left"
+                      android:layout_row="2"
+                      android:ems="10" >
+                  </EditText>
+                  
+           
+                 <TextView
+                      android:id="@+id/textView3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="right"
+                      android:layout_column="0"
+                      android:layout_gravity="left"
+                      android:layout_row="3"
+                      android:text="@string/KDLabel" />
+                  
+                  <EditText
+                      android:id="@+id/BKDEditText"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      
+                      android:layout_column="1"
+                      android:layout_gravity="left"
+                      android:layout_row="3"
+                      android:ems="10" >
+                  </EditText>
+
+                  <TextView
+                      android:id="@+id/textView23"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="right"
+                      android:layout_column="2"
+                      android:layout_gravity="left"
+                      android:layout_row="3"
+                      android:text="@string/KILabel" />
+                  
+                  <EditText
+                      android:id="@+id/SKIEditText"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      
+                      android:layout_column="3"
+                      android:layout_gravity="left"
+                      android:layout_row="3"
+                      android:ems="10" >
+                  </EditText>  
+                  
+                  <Button
+                      android:id="@+id/uploadPBButton"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+
+                      android:layout_column="1"
+                      android:layout_row="4"
+
+                      android:text="@string/setLabel" />
+                
+                 <Button
+                      android:id="@+id/uploadPSButton"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+
+                      android:layout_column="3"
+                      android:layout_row="4"
+
+                      android:text="@string/setLabel" />
+                  
+                  <TextView
+                      android:id="@+id/textView10"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_column="0"
+                      android:layout_columnSpan="2"
+                      android:layout_gravity="left"
+                      android:layout_row="5"
+                      android:text="@string/TurnPIDLabel"
+                      android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                  <TextView
+                      android:id="@+id/textView32"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="right"
+                      android:layout_column="0"
+                      android:layout_gravity="left"
+                      android:layout_row="6"
+                      android:text="@string/kpLabel" />
+                  
+                  <EditText
+                      android:id="@+id/TKPEditText"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      
+                      android:layout_column="1"
+                      android:layout_gravity="left"
+                      android:layout_row="6"
+                      android:ems="10" >
+                  </EditText>  
+                  
+                <Button
+                      android:id="@+id/uploadPTButton"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+
+                      android:layout_column="3"
+                      android:layout_row="6"
+
+                      android:text="@string/setLabel" />
+                  
+                 
+              </GridLayout>
+
+               <Button
+                   android:id="@+id/StartButton"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="@string/startLabel" />
+
+               <Button
+                   android:id="@+id/LoadSettingsButton"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/LoadSettingsLabel" />
+
+               <TextView
+                   android:id="@+id/textViewCurve"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:text="@string/cuveLabel" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal" >
+
+                  <CheckBox
+                      android:id="@+id/SACheckBox"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="SA" />
+
+                  <CheckBox
+                      android:id="@+id/KACheckBox"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="KA" />
+
+                  <CheckBox
+                      android:id="@+id/EACheckBox"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="EA" />
+
+                  <CheckBox
+                      android:id="@+id/PWMBCheckBox"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="GYRO" />
+
+                  <CheckBox
+                      android:id="@+id/PWMSCheckBox"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="PWM-B" />
+
+              </LinearLayout>
+               
+               <com.zmc.zmcrobot.CurveView
+                   android:id="@+id/curveView"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:minHeight="300dp" />
+
+</LinearLayout>
+</ScrollView>

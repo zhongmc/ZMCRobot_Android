@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zmc.zmcrobot"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:hardwareAccelerated="false"
+        android:allowBackup="true"
+		android:largeHeap="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.zmc.zmcrobot.MainActivity"
+            android:label="@string/app_name"   
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" 
+            android:configChanges="orientation|keyboardHidden"
+            >
+
+           
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zmc.zmcrobot.DeviceScanActivity"
+            android:label="@string/lookingup" >
+        </activity>
+
+        <service
+            android:name="com.zmc.zmcrobot.BluetoothLeService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.zmc.zmcrobot.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+    </application>
+
+</manifest>

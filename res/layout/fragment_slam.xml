@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+        
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" android:orientation="vertical" >
+        
+        <com.zmc.zmcrobot.ui.RobotSimulateView
+        	android:id="@+id/robot_view"
+        	android:layout_width="match_parent"
+        
+        	    android:layout_height="match_parent"
+        	
+        	android:layout_weight="60" />
+    		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <CheckBox
+                android:id="@+id/GearCtrlCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/gearCtrlLabel" />
+            
+            <CheckBox
+    		    android:id="@+id/DualCtrlCheckBox"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="2"
+    		    android:text="@string/dualCtrlLabel" />
+            
+    		<TextView
+    		    android:id="@+id/textViewVW"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="6"
+    		    android:gravity="center"
+    		    android:text="[v:0, w:0]" />
+            
+            
+                  <TextView
+                      android:id="@+id/stextView13"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="10dp"
+                      android:gravity="right"
+                      android:text="@string/velocity"
+                      android:textSize="15sp" />
+
+                  <EditText
+                      android:id="@+id/velocityEditText"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:includeFontPadding="true"
+                      android:inputType="number|numberDecimal"
+                      android:lines="1"
+                      android:maxEms="5"
+                      android:scrollHorizontally="false"
+                      android:text="0.5" >
+
+                  </EditText>
+            		
+                  <TextView
+                      android:id="@+id/stextView12"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="10dp"
+                      android:gravity="right"
+                      android:text="@string/goalAngle"
+                      android:textSize="15sp" />
+
+                  <EditText
+                      android:id="@+id/goalAngleEditText"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:includeFontPadding="true"
+                      android:inputType="number"
+                      android:lines="1"
+                      android:maxEms="5"
+                      android:scrollHorizontally="false"
+                      android:text="45" >
+
+                  </EditText>
+
+</LinearLayout>
+        
+    	  <LinearLayout
+    	      android:layout_width="match_parent"
+    	      android:layout_height="wrap_content"
+    	      android:paddingLeft="@dimen/activity_horizontal_margin" >
+    	    	
+                <CheckBox
+    		    android:id="@+id/IgnoreObstacleCheckBox"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="2"
+    		    android:text="@string/ignoreObstacleLabel" />
+    	      	      
+        		<CheckBox
+    		    android:id="@+id/SimulateCheckBox"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="2"
+    		    android:text="@string/simulageModeLabel" />
+    	      	      
+        		<CheckBox
+    		    android:id="@+id/IMUCheckBox"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="2"
+    		    android:text="@string/UseIMULabel" />
+
+        		<EditText
+        		    android:id="@+id/alphaEditText"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_weight="2"
+        		    android:ems="2"
+        		    android:inputType="number|numberDecimal"
+        		    android:text="0.6" >
+
+        		    <requestFocus />
+        		</EditText>
+        		
+	        <Button
+    	        android:id="@+id/buttonAction"
+        	    android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            	android:layout_marginRight="@dimen/activity_horizontal_margin"
+            	android:layout_weight="2"
+            	android:text="@string/go" />
+    	    	    
+    		<Button
+    		    android:id="@+id/homeButton"
+    		    style="?android:attr/buttonStyleSmall"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="2"
+    		    android:text="@string/HomeLabel" />
+
+    	</LinearLayout>
+
+    	  <!-- TextView
+    	      android:id="@+id/TextViewMsg"
+    	      android:layout_width="match_parent"
+    	      android:layout_height="wrap_content"
+    	      android:layout_marginLeft="5dp"
+    	      android:layout_marginTop="5dp"
+    	      android:text="BLE msgs" / -->
+    	  
+  	  	</LinearLayout>
+    	    		
+        		<com.zmc.zmcrobot.JoystickView
+        		    android:id="@+id/joystickView"
+        		    android:layout_width="250dp"
+        		    android:layout_height="200dp"
+        		    android:layout_gravity="bottom|right"
+        		    android:layout_marginBottom="120dp"
+        		    android:layout_marginRight="20dp" />
+ 
+        		<com.zmc.zmcrobot.JoystickView
+        		    android:id="@+id/angleJoystickView"
+        		    android:layout_width="250dp"
+        		    android:layout_height="200dp"
+        		    android:layout_gravity="bottom|left"
+        		    android:layout_marginBottom="120dp"
+        		    android:layout_marginLeft="20dp" />
+        		
+        <LinearLayout
+            android:id="@+id/GearCtrlView"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="120dp"
+            android:visibility="visible" >
+    	    	    
+    		<com.zmc.zmcrobot.SteerView
+    		    android:id="@+id/bSteerView"
+    		    android:layout_width="0dp"
+    		    android:layout_height="match_parent"
+    		    android:layout_weight="4" />
+    		<!-- com.zmc.zmcrobot.JoystickView
+    		    android:id="@+id/joystickView"
+    		    android:layout_width="0dp"
+    		    android:layout_height="match_parent"
+    		    android:layout_weight="5" / -->
+    		
+    	       <!-- com.zmc.zmcrobot.IndicatorBarView
+    	        android:id="@+id/indicatorViewL"
+    	        android:layout_width="0dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_weight="5" /-->
+
+    		<ImageButton
+    		    android:id="@+id/brakeButton"
+    		    android:layout_width="0dp"
+    		    android:layout_height="match_parent"
+    		    android:layout_weight="1"
+    		    android:background="#00000000"
+    		    android:contentDescription="@string/Brake"
+    		    android:scaleType="fitEnd"
+    		    android:src="@drawable/brake" />
+    		
+               <ImageButton
+                   android:id="@+id/speederButton"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                   android:layout_marginRight="@dimen/activity_horizontal_margin"
+                   android:layout_weight="1"
+                   android:background="#00000000"
+                   android:baselineAlignBottom="false"
+                   android:contentDescription="@string/Speeder"
+                   android:scaleType="fitEnd"
+                   android:src="@drawable/speed" >
+                
+			</ImageButton>
+
+            <ImageButton
+                android:id="@+id/speeder_rButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/speederButton"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:baselineAlignBottom="false"
+                android:contentDescription="@string/Speeder_r"
+                android:scaleType="fitEnd"
+                android:src="@drawable/speed_r" >
+
+			</ImageButton>
+ 		
+  
+    	</LinearLayout>
+        				
+</FrameLayout>

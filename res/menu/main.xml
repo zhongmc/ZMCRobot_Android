@@ -1,0 +1,61 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zmc.zmcrobot.MainActivity" >
+
+
+   <item
+        android:id="@+id/action_device"
+        android:orderInCategory="100"
+        android:title="@string/action_device"
+        android:showAsAction="never"/>
+    
+   <item
+        android:id="@+id/action_connect"
+        android:orderInCategory="100"
+        android:title="@string/action_connect"
+        android:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/action_close"
+        android:orderInCategory="100"
+        android:title="@string/action_disconnect"
+        android:showAsAction="never"/>
+
+   <item
+        android:id="@+id/action_cmd"
+        android:orderInCategory="100"
+        android:title="@string/action_cmd"
+        android:showAsAction="never"/>
+
+   	<group>
+      <item
+        android:id="@+id/action_slam_start_map"
+        android:orderInCategory="100"
+        android:title="@string/action_start_map"
+        android:showAsAction="never"/>
+   
+      <item
+        android:id="@+id/action_slam_stop_map"
+        android:orderInCategory="100"
+        android:title="@string/action_stop_map"
+        android:showAsAction="never"/>
+      
+      <item
+        android:id="@+id/action_slam_save_map"
+        android:orderInCategory="100"
+        android:title="@string/action_save_map"
+        android:showAsAction="never"/>
+      
+      <item
+        android:id="@+id/action_slam_load_map"
+        android:orderInCategory="100"
+        android:title="@string/action_load_map"
+        android:showAsAction="never"/>
+		</group>      
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>
